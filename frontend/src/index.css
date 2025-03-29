@@ -1,0 +1,24 @@
+@import '/src/fonts.css';
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Stem', sans-serif;
+
+  --border-color: rgb(192, 192, 192);
+
+  --koralle-color: #ff4d59;
+  --red-color: #f20f38;
+  --rubin-color: #bd0040;
+  --burgund-color: #781c33;
+  
+}
+
+body {
+  background-image: linear-gradient(to right, var(--burgund-color) , var(--koralle-color));
+}
+
+input {
+  cursor: pointer;
+}

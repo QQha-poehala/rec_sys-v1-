@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cdecfe37.css",
+    "main.js": "/static/js/main.b445dad7.js",
+    "static/js/453.b71220b8.chunk.js": "/static/js/453.b71220b8.chunk.js",
+    "static/media/Stem-SemiLight.woff": "/static/media/Stem-SemiLight.c9ddfd96111562a49b36.woff",
+    "static/media/Stem-Thin.woff": "/static/media/Stem-Thin.48e12ac6f147feb69292.woff",
+    "static/media/Stem-ExtraLight.woff": "/static/media/Stem-ExtraLight.41e38b0f891a9ebc9375.woff",
+    "static/media/Stem-Medium.woff": "/static/media/Stem-Medium.09df7652e7722457b2f9.woff",
+    "static/media/Stem-Regular.woff": "/static/media/Stem-Regular.dcb285d523ec55d50b50.woff",
+    "static/media/Stem-Bold.woff": "/static/media/Stem-Bold.5c37f3ee2c710269bb02.woff",
+    "static/media/Stem-Light.woff": "/static/media/Stem-Light.8e330c57478585df67e9.woff",
+    "index.html": "/index.html",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.168046b94097084a985bf72376331ad3.svg",
+    "main.cdecfe37.css.map": "/static/css/main.cdecfe37.css.map",
+    "main.b445dad7.js.map": "/static/js/main.b445dad7.js.map",
+    "453.b71220b8.chunk.js.map": "/static/js/453.b71220b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdecfe37.css",
+    "static/js/main.b445dad7.js"
+  ]
+}
