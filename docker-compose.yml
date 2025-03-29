@@ -1,0 +1,17 @@
+services:
+  server:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    environment:
+       - ASPNETCORE_URLS=http://192.168.1.2:3000
+    ports:
+      - "3000:3000"
+  client:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    environment:
+      - REACT_APP_API_URI=http://95.191.253.75:3000
+    ports:
+      - "3001:3001"
