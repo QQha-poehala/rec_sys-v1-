@@ -1,0 +1,172 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Rec_backend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/recommendation": {
+      "post": {
+        "tags": [
+          "Rec"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetQuestionnaireRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetQuestionnaireRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetQuestionnaireRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GetQuestionnaireRequest": {
+        "type": "object",
+        "properties": {
+          "gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "sum_use_score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hobbies": {
+            "$ref": "#/components/schemas/HobbiesDto"
+          },
+          "is_grades_important": {
+            "type": "boolean"
+          },
+          "likes": {
+            "$ref": "#/components/schemas/LikesDto"
+          },
+          "olympiads": {
+            "$ref": "#/components/schemas/OlympiadsDto"
+          },
+          "preferred_it_job": {
+            "type": "string",
+            "nullable": true
+          },
+          "uni_was_my_decision": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HobbiesDto": {
+        "type": "object",
+        "properties": {
+          "game_development": {
+            "type": "boolean"
+          },
+          "sport": {
+            "type": "boolean"
+          },
+          "programming": {
+            "type": "boolean"
+          },
+          "robotics": {
+            "type": "boolean"
+          },
+          "3d_modeling": {
+            "type": "boolean"
+          },
+          "creativity": {
+            "type": "boolean"
+          },
+          "mathematics": {
+            "type": "boolean"
+          },
+          "physics": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LikesDto": {
+        "type": "object",
+        "properties": {
+          "web_development": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "system_administration": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mathematics": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hardware": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "biology": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "backend_development": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data_science": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "design": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "economy": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "frontend_development": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hacking": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OlympiadsDto": {
+        "type": "object",
+        "properties": {
+          "mathematics": {
+            "type": "boolean"
+          },
+          "computer_science": {
+            "type": "boolean"
+          },
+          "physics": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

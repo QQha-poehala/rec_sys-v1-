@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Rec_backend.Controllers.RecController",
+    "Method": "GetRecommendation",
+    "RelativePath": "recommendation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Rec_backend.Contracts.GetQuestionnaireRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

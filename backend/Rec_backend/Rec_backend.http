@@ -1,0 +1,6 @@
+@Rec_backend_HostAddress = http://172.26.112.1:5074
+
+GET {{Rec_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
